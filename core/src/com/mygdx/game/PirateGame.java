@@ -55,7 +55,7 @@ public class PirateGame extends Game {
     }
 
     /**
-     * load ui skin from assets
+     * load ui skin from assets 
      */
     private void createSkin() {
         skin = new Skin(Gdx.files.internal("UISkin/skin.json"));
