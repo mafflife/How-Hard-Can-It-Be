@@ -9,4 +9,9 @@ public class UnitTests {
     public void oneEqualsOne() {
         assertEquals(1, 1);
     }
+
+    @Test
+    public void zeroEqualsZero() {
+        assertEquals(0, 0);
+    }
 }
