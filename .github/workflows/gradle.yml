@@ -9,9 +9,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ main ]
+    branches: [ dev init-testing ]
   pull_request:
-    branches: [ main ]
+    branches: [ dev init-testing ]
 
 jobs:
   build:
@@ -29,3 +29,5 @@ jobs:
       uses: gradle/gradle-build-action@937999e9cc2425eddc7fd62d1053baf041147db7
       with:
         arguments: build
+    - name: Test Project
+      run: gradlew clean tests:test
