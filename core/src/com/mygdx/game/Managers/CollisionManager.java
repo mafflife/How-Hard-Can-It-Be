@@ -12,10 +12,10 @@ public class CollisionManager implements ContactListener {
     private static boolean initialized = false;
 
     public CollisionManager() {
-        if (initialized) {
+        if (initialised) {
             throw new RuntimeException("Collision manager cant be instantiated more then once");
         }
-        initialized = true;
+        initialised = true;
     }
 
     /**
