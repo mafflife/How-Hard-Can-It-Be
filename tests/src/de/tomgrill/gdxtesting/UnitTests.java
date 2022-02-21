@@ -14,4 +14,9 @@ public class UnitTests {
     public void zeroEqualsZero() {
         assertEquals(0, 0);
     }
+
+    @Test
+    public void twoEqualsZero() {
+        assertEquals(0, 2);
+    }
 }
